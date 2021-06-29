@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			form表单标签
+			action="",设置表单数据条件到服务器的位置
+			type="text" ,输入框输入的内容的类型
+			name，提交给服务器输入值的key（名字）
+			button按钮标签，设置了submit就会自动将表单的数据提交给服务器
+		  -->
+		  <h1>hello</h1>
+		<form action="https://www.baidu.com/s" method="post">
+			<input type="text" name="wd"  value="郭德纲" />
+			<button type="submit">搜索</button>
+		</form>
+		
+		<h1>登录</h1>
+		<!-- 如果action不写，那么就是将表单数据跟当前地址相结合提交给到服务器 -->
+		<form action="" method="post">
+			<input type="text" name="username"  value="" />
+			<input type="password" name="password"  value="" />
+			
+			
+			
+			<!-- 
+			 type:text文本输入框
+			 password密码输入框
+			 
+			 -->
+			
+			<button type="submit">登录</button>
+		</form>
+		
+		
+		<h1>注册</h1>
+		<!-- 如果action不写，那么就是将表单数据跟当前地址相结合提交给到服务器 -->
+		<form action="" method="post">
+			<input type="text" name="username"  value="" />
+			<input type="password" name="password"  value="" />
+			
+			<hr >
+			<h3>选择你的性别</h3>
+			<input type="radio" name="gender" value="男" />
+			<input type="radio" name="gender" value="女" />
+			<!-- 
+			 type:text文本输入框
+			 password密码输入框
+			 radio：单选框，同一个单选内容，name必须保持一致
+			 checkbox:复选框
+			 -->
+			 <h3>选择你喜欢的女明星</h3>
+			 迪丽热巴<input type="checkbox" name="stars"  value="迪丽热巴" />
+			 范冰冰<input type="checkbox" name="stars"  value="范冰冰" />
+			 波多野结衣<input type="checkbox" name="stars"  value="波多野结衣" />
+			
+			<textarea rows="20" cols="50" name="article" >helloworld 老陈</textarea>
+			<button type="submit">登录</button>
+		</form>
+		<!-- 
+		GET方法的数据是直接将表单数据通过链接提交给到服务器 
+			缺点：不安全/存放数据的长度有限
+			优势：效率高/提交的数据清晰可见
+		Post方法
+			优势：安全/存放的数据量大
+			缺点：效率不高
+			
+		-->
+		
+		<!-- 1、用所学的标签，实现一个介绍川建国同志的百科页面
+		2、实现百度的搜索页面
+		3、实现搜搜的搜索页面 -->
+	</body>
+</html>
